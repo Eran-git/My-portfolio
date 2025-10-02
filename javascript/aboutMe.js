@@ -4,11 +4,11 @@ const image = document.querySelector(".myPicture img");
 const image_count = document.querySelectorAll(".image_count .count");
 
 const images = [
-  "/images/black1.jpg",
-  "/images/black2.jpg",
-  "/images/black3.jpg",
-  "/images/black4.jpg",
-  "/images/black5.jpg"
+  "images/black1.jpg",
+  "images/black2.jpg",
+  "images/black3.jpg",
+  "images/black4.jpg",
+  "images/black5.jpg"
 ];
 
 let image_span = [...image_count];
@@ -47,3 +47,4 @@ document.querySelector("#btn_readMore").addEventListener("click", function(e) {
     this.textContent = "Read More";
   }
 });
+
