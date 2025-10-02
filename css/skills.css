@@ -1,0 +1,166 @@
+.skills{  
+    width: 100%;          
+    background-image: linear-gradient(to left, rgb(4, 4, 4) 50%, rgba(26, 37, 85, 0.9));
+    padding: 0 4rem 4rem 4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+/* item One */
+.images_container{
+    width: 100%;
+    margin: 40px 0;
+    border-radius: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.images_container .icon_slides{ 
+    display: inline-block;
+    animation: slides 25s linear infinite;
+}
+
+@keyframes slides {
+    from{ transform: translateX(0);}
+    to{transform: translateX(-100%);}
+}
+
+.images_container:hover .icon_slides{
+    animation-play-state: paused;
+} 
+
+.images_container .icon_slides img{
+    height: 75px;
+    margin: 0 40px;
+}
+
+
+
+/* item Two */
+.graps{
+    flex: 1;
+    width: 100%;
+    padding: 0 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.graps h1{
+    background-image: linear-gradient(to top, blue 0%, skyblue 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.graps .skills_graps .tech_tools,
+.graps .skills_graps .tech_stocks{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5));
+    width: 100%;
+    padding: 10px 50px 50px 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.graps .skills_graps .tech_tools .skills_bars,
+.graps .skills_graps .tech_stocks .skills_bars{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.graps .skills_graps .tech_tools h2,
+.graps .skills_graps .tech_stocks h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    background-image: linear-gradient(to top, rgba(19, 19, 35, 0.786) 0%, rgba(0, 1, 1, 0.392) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.graps .skills_graps .tech_tools .skill .progress_bar,
+.graps .skills_graps .tech_stocks .skill .progress_bar{
+      width: 100%;
+      background: #ddd;
+      border-radius: 25px;
+      overflow: hidden;
+      height: 25px;
+}
+
+.graps .skills_graps .tech_tools .skill .progress_bar .progress,
+.graps .skills_graps .tech_stocks .skill .progress_bar .progress{
+    height: 100%;
+    width: 0; /* nagsisimula sa 0% */
+    background: linear-gradient(90deg, #00bfff, #1e90ff);
+    border-radius: 25px;
+    text-align: right;
+    padding-right: 10px;
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+    animation: width 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 100%;
+}
+
+@keyframes width {
+    from { width: 0; }
+    to { width: var(--percentage); }
+}
+
+
+.skills .graps .skills_graps{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 960px) {
+    .skills{
+        height: auto;
+        padding: 4rem 2rem;
+    }
+
+    .skills .icon_tools,
+    .skills .icon_stocks{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .skills .graps{
+        padding: 0;
+        margin-top: 3rem;
+    }
+
+    .skills .graps .skills_graps{
+        flex-direction: column;
+    }
+
+    .skills .graps .skills_graps .tech_tools,
+    .skills .graps .skills_graps .tech_stocks{
+        padding: 10px 20px 20px 20px;
+    }
+}

@@ -1,0 +1,196 @@
+.introduction{
+    background-image: linear-gradient(145deg, rgb(4, 4, 4) 50%, rgba(26, 37, 85, 0.9));
+    width: 100%;
+    height: 120vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.introduction .imageTwo{
+    flex: 1;
+    height: 100%;
+    width: 100%; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;                    
+    animation: fadeleft 1s ease-in-out;
+    animation-timeline: view(20% 0%);
+    animation-range: entry 0% cover 100%;
+}
+
+@keyframes fadeleft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.introduction .imageTwo .myPicture{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 10px 10px cyan;
+    overflow: hidden;
+
+}
+
+.introduction .imageTwo .myPicture img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.introduction .imageTwo .myPicture #btn_left{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.introduction .imageTwo .myPicture #btn_right{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.introduction .imageTwo .image_count{
+    display: flex;
+    gap: 10px;
+}
+
+.introduction .image_count .count:first-child{
+    background-color: cyan;
+}
+
+.introduction .imageTwo .image_count span{
+    width: 10px;
+    height: 10px;
+    border: 1px solid cyan;
+    border-radius: 50%;
+    box-shadow: 0 0 5px cyan;
+}
+
+
+.introduction .text{
+    flex: 1;
+    color: white;
+}
+.introduction .text h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to top, blue 0%, skyblue 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    animation: fadeRight 1s linear;
+    animation-timeline: view(50% 0%);
+    animation-range: entry 0% cover 100%;
+    font-weight: 700;
+    
+    
+}
+
+@keyframes fadeRight {
+    from{
+        transform: translateX(50%);
+        opacity: 0;
+
+    }to{
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+}
+
+
+.introduction .text p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.introduction .text .btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.introduction .text .btn:hover{
+    background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 768px){
+    .introduction{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .introduction .imageTwo, .introduction .text{
+        flex: none;
+        width: 100%;
+    }
+    .introduction .imageTwo{
+        animation: padeIn 1s ease-in-out;
+        animation-timeline: view(10% 0%);
+        animation-range: entry 0% cover 100%;
+
+    }
+    @keyframes padeIn {
+        from{
+            opacity: 0;
+        }to{
+            opacity: 1;
+        }
+    }
+
+    .introduction .imageTwo .myPicture{
+        width: 300px;
+        height: 300px;
+        box-shadow: 0 0 5px 5px cyan;
+
+    } 
+
+    .introduction .imageTwo .myPicture img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .introduction .text h2{
+        font-size: 28px;
+        text-align: center;
+        animation: padeIn 1s linear;
+        animation-timeline: view(5% 0%);
+        animation-range: entry 0% cover 100%;
+    }
+    .introduction .text p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .introduction .text .btn{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+
+}

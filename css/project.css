@@ -1,0 +1,174 @@
+.project{
+  height: 100vh;
+  width: 100%;
+  padding: 100px 20px;
+  background-image: linear-gradient(-45deg, rgb(4, 4, 4) 50%, rgba(26, 37, 85, 0.9));
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+}
+
+
+.project_header h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background: var(--LinearColor);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-weight: bolder;
+}
+
+/* item 2 */
+.project_cards{
+    background-image: linear-gradient(135deg, #ffffff, #e0e0e0);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project_cards .add_project{
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+
+.project_cards .add_project img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #333;
+
+}
+
+.project_cards .add_project img:hover{
+    transform: scale(1.05);                                                                                     
+}
+
+.project_cards .project_name{
+    display: none;
+    font-size: 1.5rem;
+}
+
+.project_cards .project_description{
+    display: none;
+    font-size: 1rem;
+}
+
+
+/* input project */
+
+.project .input_project{
+    width: 50%;
+    background-image: linear-gradient(135deg, #ffffff, #e0e0e0);
+    border-radius: 10px;
+    padding: 20px 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.project .input_project #closeBtn{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.project .input_project #closeBtn:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.project .input_project form{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.project .input_project form .project_name{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+.project .input_project form .project_name #name{
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    
+}
+
+.project .input_project form .project_name #name:focus{
+    outline: none;
+    border: none;
+}
+
+.project .input_project form #description{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+}   
+
+.project .input_project form #description:focus{
+    outline: none;
+    border: none;
+}
+
+.project .input_project form #projectbtn_submit{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.project .input_project form #projectbtn_submit:hover{
+    transform: scale(1.05);
+}

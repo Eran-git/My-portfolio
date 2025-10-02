@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>my portfolio</title>
+        <link rel="stylesheet" href="css/index.css">
+        
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">     <!--Navbar-->
+            <div class="navbar_container">
+                <a href="" id="navbar_logo">ERAN</a>
+                <div class="navbar_toggle" id="mobile_menu">
+                    <span class="bar"></span>   
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar_menu">
+                    <li class="menu_items">
+                        <a href="#hero" class="menu_links">Home</a>
+                    </li>
+                    <li class="menu_items">
+                        <a href="#introduction" class="menu_links">About</a>
+                    </li>
+                    <li class="menu_items">
+                        <a href="#skills" class="menu_links">Skills</a>
+                    </li>
+                    <li class="menu_items">
+                        <a href="#project" class="menu_links">Project</a>
+                    </li>
+                    <li class="menu_items">
+                        <a href="#contact" class="menu_links">Contact</a>
+                    </li>
+                    <li class="menu_btn">
+                        <span class="line"></span>
+                        <button id="menu-button">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="login-form">
+            <form>
+                <h1>Admin Only</h1>
+                <input id="username" type="text" placeholder="Username" required>
+                <input id="password" type="password" placeholder="Password" required>
+                <button id="loginBtn" type="submit">Log In</button>
+            </form>
+        </div>
+        <section id="hero" class="hero">    <!--Hero-->
+            <div class="introduce">
+                <div class="hello">Hello, I'm</div>
+                <div class="name">Ramon Agbuya</div>
+                <div class="job"></div>
+                <div class="desc">I am a front-end web developer with a passion for creating beautiful and functional websites. I have a strong background in HTML, CSS, and JavaScript, and I am always eager to learn new technologies and improve my skills.</div>
+                <div class="buttons">
+                    <a href="#" class="btn" id="hireMe_btn">Hire Me</a>
+                    <a href="#" class="btn btn-light">Download CV</a>
+                </div> 
+            </div>
+            <div class="photo">
+                <img src="images/black.jpg" alt="profile photo">
+                
+                <ul class="contact_icon">
+                    <li class="icon">
+                        <img src="images/facebook-brands-solid-full.svg" alt="facebook" id="facebook">
+                        <span class="toolTip">Facebook</span>
+                    </li>
+                    <li class="icon">
+                        <img src="images/instagram-brands-solid-full.svg" alt="Instagram" id="instagram">
+                        <span class="toolTip">Instagram</span>
+                    </li>
+                    <li class="icon">
+                        <img src="images/envelope-regular-full.svg" alt="Gmail" id="gmail">
+                        <span class="toolTip">Gmail</span>
+                    </li>
+                    <li class="icon">
+                        <img src="images/location-dot-solid-full.svg" alt="Location" id="location">
+                        <span class="toolTip">Location</span>
+                    </li>   
+                </ul>
+            </div>
+        </section>
+        <section id="introduction" class="introduction">    <!--Introduction-->
+            <div class="imageTwo">
+                <div class="myPicture">
+                    <img src="images/black1.jpg" alt="picture">
+                    <span id="btn_left"></span>
+                    <span id="btn_right"></span>
+                </div>
+                <div class="image_count">
+                    <span class="count"></span>
+                    <span class="count"></span>
+                    <span class="count"></span>
+                    <span class="count"></span>
+                    <span class="count"></span>
+                </div>
+            </div>
+            <div class="text">
+                <h2>About Me</h2>
+                <p class="paragraph"> Hi, I’m Eran – a BS Computer Science student with a passion for technology and problem-solving.
+                    I have foundational knowledge in HTML, CSS, JavaScript, Java, MySQL, and REST API development,
+                    and I’m continuously improving my skills by working on small projects and exploring new tools.
+                <br>
+                    Before pursuing Computer Science, I worked for 3 years in the electrical field,
+                    which strengthened my discipline, adaptability, and hands-on approach to technical work.
+                    That experience taught me the value of precision and safety  qualities I now carry
+                    over into programming and software development.
+                <br>
+                </p>
+                <a href="#" id="btn_readMore" class="btn btn-light">Read More</a>
+            </div>
+        </section>
+        <section id="skills" class="skills">    <!--skill-->
+            <div class="images_container">
+                <div class="icon_slides">
+                    <img src="images/html.png" alt="html">
+                    <img src="images/css-3.png" alt="css">
+                    <img src="images/js.png" alt="js">
+                    <img src="images/java.png" alt="java">
+                    <img src="images/mysql-logo.png" alt="mysql">
+                    <img src="images/mdi--github.png" alt="github">
+                    <img src="images/git.png" alt="git">
+                    <img src="images/vscode.png" alt="vscode">
+                    <img src="images/devicon--figma.png" alt="figma">
+                    <img src="images/devicon--eclipse.png" alt="eclipse">
+                </div>
+            </div>
+            <div class="graps">
+                <h1>My Skills</h1>
+                <div class="skills_graps">
+                    <div class="tech_tools">
+                        <h2>Tech Tools</h2>
+                        <div class="skills_bars">
+                            <div class="skill">
+                                <div class="progress_name">HTML</div>
+                                <div class="progress_bar">
+                                    <div class="progress" data-percentage="90%">90%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="progress_name">CSS</div>
+                                <div class="progress_bar">
+                                    <div class="progress" data-percentage="85%">85%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="progress_name">JAVASCRIPT</div>
+                                <div class="progress_bar">
+                                    <div class="progress" data-percentage="70%">70%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="progress_name">JAVA</div>
+                                <div class="progress_bar">
+                                    <div class="progress" data-percentage="75%">75%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="progress_name">MYSQL</div>
+                                <div class="progress_bar">
+                                    <div class="progress" data-percentage="65%">65%</div>
+                                </div>
+                            </div>
+                        </div>       
+                    </div>
+                    <div class="tech_stocks">
+                        <h2>Tech Stocks</h2>
+                        <div class="skills_bars">
+                            <div class="skill">
+                                <div class="progress_name">GITHUB</div>
+                                <div class="progress_bar">
+                                    <div class="progress" data-percentage="75%">75%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="progress_name">GIT</div>
+                                <div class="progress_bar">
+                                    <div class="progress" data-percentage="70%">70%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="progress_name">VSCODE</div>
+                                <div class="progress_bar">
+                                    <div class="progress" data-percentage="80%">80%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="progress_name">FIGMA</div>
+                                <div class="progress_bar">
+                                    <div class="progress" data-percentage="65%">65%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="progress_name">ECLIPSE</div>
+                                <div class="progress_bar">
+                                    <div class="progress" data-percentage="65%">65%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </section>
+        <section id="project" class="project">          <!--Project-->
+            <div class="project_header">
+                <h1>My Projects</h1>
+            </div>
+            <div class="project_cards">
+                <div class="add_project" id="add_project"> 
+                    <img src="images/square.svg" alt="project1">
+                </div>
+                <div class="project_name"></div>
+                <div class="project_description"></div>
+            </div>
+            <div class="input_project">
+                <h2>Add Your Project</h2>
+                <img src="images/x_mark.svg" alt="x_mark" id="closeBtn">
+                <form action="">
+                    <div class="project_name">
+                        <input type="text" id="name" placeholder="Project Name">
+                    </div>
+                    <textarea name="project_description" id="description" placeholder="Describe your project..."></textarea>
+                    <input type="file" name="project_image" id="image">
+                    <button id="projectbtn_submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        <section id="contact" class="contact">      <!--Contact-->
+            <h1>Contact Me</h1>
+            <div class="contact_info">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                <a href="#" class="btn btn-light">Submit</a>
+            </div>
+        </section>
+        <footer class="footer">     <!--Footer-->
+            <p>© 2024 Ramon Agbuya. All rights reserved.</p>
+        </footer>
+
+        
+    </body>
+    <script src="javascript/login-form.js"></script>
+    <script src="javascript/home.js"></script>
+    <script src="javascript/introduction.js"></script>
+    <script src="javascript/aboutMe.js"></script>
+    <script src="javascript/skills.js"></script>
+    <script src="javascript/project.js"></script>
+</html>
