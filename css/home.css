@@ -1,284 +1,289 @@
 .hero{
-    background-image: linear-gradient(-45deg, rgb(4, 4, 4) 50%, rgba(26, 37, 85, 0.9));
-    width: 100%;
-    height: 90vh;
-    color: white;
+background-image: linear-gradient(-45deg, rgb(4, 4, 4) 50%, rgba(26, 37, 85, 0.9));
+width: 100%;
+height: 90vh;
+color: white;
+padding: 100px;
 
-    display: flex;
-    align-items: center;
-    gap: 100px;
+display: flex;
+align-items: center;
+gap: 100px;
 }
 
 .hero .introduce{
-    flex: 1;
-    padding-left: 100px;
+flex: 1;
 }
 
 .introduce .hello{
-    font-size: 30px;
-    margin-bottom: 10px;
-    animation: fadeInUp 1s ease-in-out both;
+font-size: 2rem;
+margin-bottom: 10px;
+animation: fadeInUp 1s ease-in-out both;
 }
 
 .introduce .name{
-    background: var(--LinearColor);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    font-size: 70px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    animation: fadeInUp 1s ease-in-out both;
+background: var(--LinearColor);
+-webkit-background-clip: text;
+-moz-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-text-fill-color: transparent;
+font-size: 5rem;
+font-weight: bold;
+margin-bottom: 10px;
+animation: fadeInUp 1s ease-in-out both;
 }
 .introduce .job{
-    font-size: 40px;
-    margin-bottom: 20px;
-    width: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 4s steps(30, end) forwards, blink 0.7s step-end infinite, fadeInUp 1s ease-in-out both;
+font-size: 2.5rem;
+margin-bottom: 20px;
+width: 0;
+white-space: nowrap;
+overflow: hidden;
+animation: typing 4s steps(30, end) forwards, blink 0.7s step-end infinite, fadeInUp 1s ease-in-out both;
 }
 
 .job::after {
-    content: "|";
-    margin-left: 5px;
-    animation: blink 0.7s infinite;
+content: "|";
+margin-left: 5px;
+animation: blink 0.7s infinite;
 }
 
 @keyframes blink {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
+0%, 50% { opacity: 1; }
+51%, 100% { opacity: 0; }
 }
 
 @keyframes typing {
-    from { width: 0; }
-    to { width: 24ch; } /* depende sa haba ng text mo */
+from { width: 0; }
+to { width: 24ch; } /* depende sa haba ng text mo */
 }
 
 @keyframes fadeInUp{
-    0%{
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-    
+0%{
+    opacity: 0;
+    transform: translateY(20px);
+}
+100%{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 }
 
 
 
 .introduce .desc{
-    font-size: 20px;
-    margin-bottom: 30px;
-    line-height: 1.5;
-    animation: fadeInUp 1s ease-in-out both;
+font-size: 1.3rem;
+margin-bottom: 30px;
+line-height: 1.5;
+animation: fadeInUp 1s ease-in-out both;
 }
 
 .introduce .buttons{
-    display: flex;
-    align-items: center;
-    animation: fadeInUp 1s ease-in-out both;
+display: flex;
+align-items: center;
+animation: fadeInUp 1s ease-in-out both;
 }
 
 .introduce .buttons #hireMe_btn{
-    -webkit-animation: vibrate-1 0.3s linear infinite both;
-    animation: vibrate-1 0.3s linear infinite both;
+-webkit-animation: vibrate-1 0.3s linear infinite both;
+animation: vibrate-1 0.3s linear infinite both;
 }
 
 @-webkit-keyframes vibrate-1 {
-    0% {
-        -webkit-transform: translate(0);
-                transform: translate(0);
-    }
-    20% {
-        -webkit-transform: translate(-2px, 2px);
-                transform: translate(-2px, 2px);
-    }
-    40% {
-        -webkit-transform: translate(-2px, -2px);
-                transform: translate(-2px, -2px);
-    }
-    60% {
-        -webkit-transform: translate(2px, 2px);
-                transform: translate(2px, 2px);
-    }
-    80% {
-        -webkit-transform: translate(2px, -2px);
-                transform: translate(2px, -2px);
-    }
-    100% {
-        -webkit-transform: translate(0);
-                transform: translate(0);
-    }
-    }
-    @keyframes vibrate-1 {
-    0% {
-        -webkit-transform: translate(0);
-                transform: translate(0);
-    }
-    20% {
-        -webkit-transform: translate(-2px, 2px);
-                transform: translate(-2px, 2px);
-    }
-    40% {
-        -webkit-transform: translate(-2px, -2px);
-                transform: translate(-2px, -2px);
-    }
-    60% {
-        -webkit-transform: translate(2px, 2px);
-                transform: translate(2px, 2px);
-    }
-    80% {
-        -webkit-transform: translate(2px, -2px);
-                transform: translate(2px, -2px);
-    }
-    100% {
-        -webkit-transform: translate(0);
-                transform: translate(0);
-    }
+0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+}
+20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+}
+40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+}
+60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+}
+80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+}
+100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+}
+}
+@keyframes vibrate-1 {
+0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+}
+20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+}
+40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+}
+60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+}
+80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+}
+100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+}
 }
 
 .introduce .buttons #hireMe_btn:hover{
-    background-color: white;
-    color: black;
-    -webkit-animation: none;
-    animation: none;
+background-color: white;
+color: black;
+-webkit-animation: none;
+animation: none;
 }   
 
 .introduce .buttons .btn{
-    text-decoration: none;
-    padding: 15px 30px;
-    border: 2px solid white;
-    color: white;
-    font-size: 20px;
-    border-radius: 30px;
-    margin-right: 20px;
-    transition: 0.3s;
-    
+text-decoration: none;
+padding: 15px 30px;
+border: 2px solid white;
+color: white;
+font-size: 20px;
+border-radius: 30px;
+margin-right: 20px;
+transition: 0.3s;
+
 }
 
 .introduce .buttons .btn:hover{
-    background-color: white;
-    color: black;
+background-color: white;
+color: black;
 }
 
+
+/* flex two */
 .hero .photo{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+position: relative;
 }
 
 .hero .photo img{
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    object-fit: cover;
-    animation: fadeInUp 1s ease-in-out both;
+width: 500px;
+height: 500px;
+border-radius: 50%;
+object-fit: cover;
+animation: fadeInUp 1s ease-in-out both;
 }
 
 .hero .photo .contact_icon{
-    position: absolute;
-    bottom: 40px;
-    list-style: none;
-    filter: drop-shadow(0 0 5px rgb(6, 242, 242));
+position: absolute;
+bottom: 40px;
+list-style: none;
+filter: drop-shadow(0 0 5px rgb(6, 242, 242));
 
-    display: flex;
-    justify-content: center;
+display: flex;
+justify-content: center;
 
 }
 
 .hero .photo .contact_icon .icon{
-    width: 40px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
+width: 40px;
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
 
 }
 
 .hero .photo .contact_icon .icon .toolTip{
-    margin-left: -15px;
-    margin-top: 10px;
-    animation: fadeInUp 1s ease-in-out both;
-    color: cyan;
-    text-shadow: 0 0 10px cyan;
-    visibility: hidden;
+margin-left: -15px;
+margin-top: 10px;
+animation: fadeInUp 1s ease-in-out both;
+color: cyan;
+text-shadow: 0 0 10px cyan;
+visibility: hidden;
 
 }
 
 .hero .photo .contact_icon .icon:hover .toolTip{
-    visibility: visible;
-    animation: fadeInUp 1s ease-in-out both;
+visibility: visible;
+animation: fadeInUp 1s ease-in-out both;
 }
 
 .hero .photo .contact_icon img{
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-    transition: transform 0.3s ease, filter 0.3s ease;
+height: 30px;
+width: 30px;
+cursor: pointer;
+transition: transform 0.3s ease, filter 0.3s ease;
 
 }
 
 .hero .photo .contact_icon li:hover img,
 .hero .photo .contact_icon li:hover svg {
-    transform: scale(1.2);
-    filter: drop-shadow(0 0 5px cyan);
+transform: scale(1.2);
+filter: drop-shadow(0 0 5px cyan);
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
 
-    .hero{
-        flex-direction: column;
-        text-align: center;
-        height: auto;
-        padding: 50px;
-        gap: 50px;
-    }
+.hero{
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 50px;
+    gap: 50px;
+}
 
-    .hero .introduce{
-        order: 2;
-        padding: 0;
-    }
+.hero .introduce{
+    order: 2;
+    padding: 0 20px
+}
 
-    .introduce .name{
-        font-size: 50px;
-    }
+.introduce .name{
+    font-size: 50px;
+}
 
-    .introduce .job{
-        margin-left: 20px;
-        font-size: 30px;
-    }
+.introduce .job{
+    margin-left: 20px;
+    font-size: 30px;
+}
 
-    .introduce .desc{
-        font-size: 18px;
-    }
+.introduce .desc{
+    font-size: 18px;
+    padding: 0 20px;
+}
 
-    .introduce .buttons{
-        justify-content: center;
-    }
+.introduce .buttons{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
-    .introduce .buttons .btn{
-        font-size: 18px;
-        padding: 10px 20px;
-    }
+.introduce .buttons .btn{
+    font-size: 18px;
+    padding: 10px 20px;
+}
 
-    .hero .photo{
-        order: 1;
-        gap: 40px;
-    }
+.hero .photo{
+    order: 1;
+    gap: 40px;
+}
 
-    .hero .photo img{
-        width: 300px;
-        height: 300px;
-    }
+.hero .photo img{
+    width: 300px;
+    height: 300px;
+}
 
-    .hero .photo .contact_icon{
-        position: static;
-    }
+.hero .photo .contact_icon{
+    position: static;
+}
 }
